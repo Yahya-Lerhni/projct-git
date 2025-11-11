@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Navbar Example</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="brand">
+        <span class="logo">YL</span>
+        <span class="brand-text">MySite</span>
+      </a>
+
+      <nav>
+        <div id="navLinks" class="nav-links" aria-expanded="false">
+          <a href="#home">الرئيسية</a>
+          <a href="#services">الخدمات</a>
+          <a href="#projects">المشاريع</a>
+          <a href="#contact">اتصل بنا</a>
+          <a href="#signup" class="cta">سجل الآن</a>
+        </div>
+
+        <button id="hamb" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>مرحباً بك في <span>موقعي</span> 🌟</h1>
+      <p>أنا مطوّر ويب متخصّص في HTML, CSS, و JavaScript. أصمّم مواقع عصرية و responsive.</p>
+      <a href="#contact" class="hero-btn">تواصل معي</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>من أنا</h2>
+    <p>أنا يحيى، مطوّر ويب، عندي شغف في تصميم واجهات جميلة وتجربة مستخدم ممتازة. أتعلم كل يوم الجديد في التكنولوجيا.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>الخدمات</h2>
+    <div class="cards">
+      <div class="card">تصميم واجهات HTML & CSS</div>
+      <div class="card">تطوير JavaScript & React</div>
+      <div class="card">إدارة Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>المشاريع</h2>
+    <div class="cards">
+      <div class="card">موقع شخصي</div>
+      <div class="card">تطبيق To-Do List</div>
+      <div class="card">موقع تجاري</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>اتصل بي</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="اسمك" required>
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <textarea placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+</main>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
